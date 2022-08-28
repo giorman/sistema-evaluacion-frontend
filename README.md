@@ -22,12 +22,12 @@
 * Permite hacer un login e ingresar a una interfaz de administrador o invitado
 
 ## Usuarios
-* Administrador: 
- 	giormanadministrador
-	123456
-* Usuario:
-	giormaninvitado
-	123456
+### Administrador: 
+* usuario: giormanadministrador
+* contraseña: 123456
+### Usuario:
+* usuario: giormaninvitado
+* contraseña: 123456
 
 ## Ramas
 
