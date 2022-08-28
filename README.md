@@ -1,6 +1,37 @@
-# SistemaEvaluacionFrontend
+# Proyecto Sistema de Evaluaciones-Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+- Este proyecto es un sistema para realizar evaluaciones educaticativas, se encuentra en desarrollo.
+
+## Repositorio Backend [Enlace](https://github.com/giorman/sistema-evaluacion-backend)
+
+# [Demo](https://giorman.github.io/sistema-evaluacion-frontend/)
+
+-  Este [enlace](https://giorman.github.io/sistema-evaluacion-frontend/) es un demo de la app que se encuentra su front-end en gitpages y su backend en heroku
+
+## Recomendaciones
+
+- Esperar un momento y recargar la app mientras se activa el servidor donde esta alojado el backend
+
+## Tecnologias
+
+- Angular 13.3.9, HTML, CSS, Angular material, Typescript
+
+## Funcionalidad
+
+* Esta te permite crear un usuario para acceder como invitado
+* Permite hacer un login e ingresar a una interfaz de administrador o invitado
+
+## Usuarios
+* Administrador: 
+- giormanadministrador
+- 123456
+* Usuario:
+- giormaninvitado
+- 123456
+
+## Ramas
+
+* La Rama Master funciona en local
 
 ## Development server
 
