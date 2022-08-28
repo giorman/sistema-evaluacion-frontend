@@ -23,11 +23,11 @@
 
 ## Usuarios
 * Administrador: 
-- giormanadministrador
-- 123456
+ 	giormanadministrador
+	123456
 * Usuario:
-- giormaninvitado
-- 123456
+	giormaninvitado
+	123456
 
 ## Ramas
 
