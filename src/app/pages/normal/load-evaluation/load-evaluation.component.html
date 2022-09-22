@@ -1,0 +1,36 @@
+<div class="bootstrap-wrapper">
+  <div class="container-fluid">
+    <h1>Evaluaciones disponibles</h1>
+    <div class="row mt20" *ngIf="evaluations">
+      <div class="col-md-6" *ngFor="let evaluation of evaluations">
+        <mat-card class="mb20">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image">
+            </div>
+            <mat-card-title>
+              {{ evaluation.title }}
+            </mat-card-title>
+            <mat-card-subtitle>
+              {{ evaluation.category.title }}
+            </mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{ evaluation.description }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button color="warn" [routerLink]="'/normal/instructions/'+evaluation.id">Empezar</button>
+            <button mat-button color="accent">Preguntas : {{ evaluation.numberQuestion }}</button>
+            <button mat-button color="accent">P.M : {{ evaluation.pointMax }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="col-md-12" *ngIf="evaluations.length == 0">
+        <mat-card>
+          <mat-card-content>
+            <h1>No hay evaluciones en esta categoría</h1>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

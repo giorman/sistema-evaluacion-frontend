@@ -1,0 +1,52 @@
+<mat-card>
+  <h1>Actualizar evaluación</h1>
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <form [formGroup]="form">
+        <mat-form-field class="w100" appearance="fill">
+          <mat-label>Título</mat-label>
+          <input formControlName="title" type="text" name="titulo" placeholder="Digite el título" matInput>
+        </mat-form-field>
+        <mat-form-field class="w100" appearance="fill">
+          <mat-label>Descripción</mat-label>
+          <textarea formControlName="description" type="text" name="descripcion" placeholder="Digite la descripción"
+            matInput rows="8"></textarea>
+        </mat-form-field>
+
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field class="w100" appearance="fill">
+              <mat-label>Puntos máximos</mat-label>
+              <input formControlName="pointMax" type="number" name="puntosMaximos"
+                placeholder="Digite la cantidad de puntos" matInput>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field class="w100" appearance="fill">
+              <mat-label>Número de preguntas</mat-label>
+              <input formControlName="numberQuestion" type="number" name="numeroDePreguntas"
+                placeholder="Digite el número de preguntas" matInput>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <mat-slide-toggle class="mt20" name="activo" formControlName="enable" color="accent">
+          Disponible
+        </mat-slide-toggle>
+
+        <mat-form-field appearance="fill" class="mt20 w100">
+          <mat-label>Categorías</mat-label>
+          <mat-select name="categoria" formControlName="category">
+            <mat-option *ngFor="let category of categories" [value]="category.id">
+              {{ category.title }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div class="container text-center">
+          <button mat-raised-button color="warn" (click)="update()" [disabled]="!form.valid">Actualizar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</mat-card>

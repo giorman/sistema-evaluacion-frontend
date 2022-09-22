@@ -19,6 +19,6 @@ export class UserService {
    }
 
    addUser(user:User):Observable<User>{
-    return this.http.post<User>(`${this.endpoint}/save`,user);
+    return this.http.post<User>(`${this.endpoint}/user/save`,user);
    }
 }

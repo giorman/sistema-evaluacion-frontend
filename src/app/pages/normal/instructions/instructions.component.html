@@ -1,0 +1,45 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <mat-card class="mt20">
+          <mat-card-header>
+            <mat-card-title>
+              Lea las instrucciones de esta página cuidadosamente
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-subtitle>Un paso más para ir</mat-card-subtitle>
+          <mat-card-content class="ml30">
+            <h1>{{ evaluation.title }}</h1>
+            <p>{{ evaluation.description }}</p>
+            <mat-divider></mat-divider>
+            <br>
+            <h1>Instrucciones importantes</h1>
+
+            <ul>
+              <li>Esta evaluación es solo para fines de práctica</li>
+              <li>Tienes que enviar la evaluación en <b>{{ timeMinutes }} minutos</b></li>
+              <li>Puede intentar la evaluación cualquier cantidad de veces</li>
+              <li>Hay <b>{{ pointQuestion }} puntos por pregunta</b></li>
+            </ul>
+            <mat-divider></mat-divider>
+            <br>
+            <h1>Intentos de la prueba</h1>
+            <ul>
+              <li>Presione el boton <b>Empezar</b> para iniciar la evaluación</li>
+              <li>El tiempo comenzará en el momento en que haga click en el botón de inicio</li>
+              <li>No puede reanudar este evaluación si se interrumpe por algún motivo</li>
+              <li>Desplácese hacia abajo para pasar a la siguiente pregunta</li>
+              <li>Haga clic en el botón enviar evaluación al finalizar</li>
+            </ul>
+          </mat-card-content>
+          <mat-card-actions class="text-center mb20">
+            <button (click)="startEvaluation()" mat-raised-button color="warn">
+              Comenzar evaluación
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

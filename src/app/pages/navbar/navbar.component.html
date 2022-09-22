@@ -1,10 +1,10 @@
 <mat-toolbar color="accent">
-  <a [routerLink]="'/'" mat-icon-button class="example-icon" arial-label="Example icon-button with menu icon">
+  <a mat-icon-button class="example-icon" arial-label="Example icon-button with menu icon">
     <mat-icon>menu_books</mat-icon>
   </a>
   <span>Portal de evaluaciones</span>
   <span class="example-spacer"></span>
-  <a *ngIf="!this.loginService.isLoggedIn" [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon"
+  <a *ngIf="!this.loginService.isLoggedIn" [routerLink]="'/'" mat-icon-button class="example-icon favorite-icon"
     aria-label="Example icon-button with heart icon">
     Iniciar sesión
   </a>

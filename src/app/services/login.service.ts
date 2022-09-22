@@ -9,8 +9,7 @@ import { User } from '../models/User';
 })
 export class LoginService {
 
- // public loginStatusSubjec = new Subject<boolean>();
-  private endpoint = environment.apiBaseUrlLogin;
+  private endpoint = environment.apiBaseUrl;
   private headers: HttpHeaders = new HttpHeaders({
     'Content-Type': 'application/json',
     Authorization: 'my-auth-token',

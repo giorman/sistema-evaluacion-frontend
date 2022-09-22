@@ -13,7 +13,7 @@ export class AlertService {
       title: titulo,
       text: texto,
       icon: 'success',
-      confirmButtonColor: '#0275dB',
+      confirmButtonColor: '#FFC50F',
     });
   }
   error(titulo: string, texto: string) {
@@ -21,7 +21,7 @@ export class AlertService {
       title: titulo,
       text: texto,
       icon: 'error',
-      confirmButtonColor: '#0275dB',
+      confirmButtonColor: '#FFC50F',
     });
   }
   warning(titulo: string, texto: string) {
@@ -29,7 +29,7 @@ export class AlertService {
       title: titulo,
       text: texto,
       icon: 'warning',
-      confirmButtonColor: '#0275dB',
+      confirmButtonColor: '#FFC50F',
     });
   }
   info(titulo: string, texto: string) {
@@ -37,7 +37,7 @@ export class AlertService {
       title: titulo,
       text: texto,
       icon: 'info',
-      confirmButtonColor: '#0275dB',
+      confirmButtonColor: '#FFC50F',
     });
   }
 }

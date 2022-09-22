@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-action-list>
+    <div mat-subheader>Menu</div>
+    <button routerLink="/normal" mat-list-item>
+      <mat-icon mat-list-icon>home</mat-icon> Inicio
+    </button>
+    <button mat-list-item routerLink="/normal/profile">
+      <mat-icon mat-list-icon>account_circle</mat-icon>Perfil
+    </button>
+    <div mat-subheader>Categorías disponibles</div>
+    <button routerLink="/normal/all" mat-list-item>
+      <mat-icon mat-list-icon>quiz</mat-icon>Evaluaciones
+    </button>
+    <button [routerLink]="'/normal/'+category.id" mat-list-item *ngFor="let category of categories">
+      <mat-icon mat-list-icon>account_circle</mat-icon> {{ category.title }}
+    </button>
+    <button mat-list-item (click)="logout()">
+      <mat-icon mat-list-icon>logout</mat-icon>Salir
+    </button>
+  </mat-action-list>
+</mat-card>
