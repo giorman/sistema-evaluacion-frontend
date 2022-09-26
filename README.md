@@ -2,9 +2,9 @@
 
 - Este proyecto es un sistema para realizar evaluaciones educaticativas, se encuentra en desarrollo.
 
-## Repositorio Backend [Enlace](https://github.com/giorman/sistema-evaluacion-backend)
+# Repositorio Backend [Enlace](https://github.com/giorman/sistema-evaluacion-backend)
 
-# [Demo](https://giorman.github.io/sistema-evaluacion-frontend/)
+#  Aplicacion [demo](https://giorman.github.io/sistema-evaluacion-frontend/)
 
 -  Este [enlace](https://giorman.github.io/sistema-evaluacion-frontend/) es un demo de la app que se encuentra su front-end en gitpages y su backend en heroku
 
@@ -14,7 +14,7 @@
 
 ## Tecnologias
 
-- Angular 13.3.9, HTML, CSS, Angular material, Typescript
+- Angular 13.3.11, HTML, CSS, Angular material, Typescript
 
 ## Funcionalidad
 
@@ -23,11 +23,11 @@
 
 ## Usuarios
 ### Administrador: 
-* usuario: giormanadministrador
-* contraseña: 123456
+* usuario: admin
+* contraseña: admin
 ### Usuario:
-* usuario: giormaninvitado
-* contraseña: 123456
+* usuario: normal
+* contraseña: normal
 
 ## Ramas
 
